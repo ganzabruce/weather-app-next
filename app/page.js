@@ -8,7 +8,6 @@ export default function Home() {
   const [query, setQuery] = useState('');
   const [weather, setWeather] = useState({});
   const [info , setInfo] = useState("")
-  console.log(weather)
   const search = async (e) => {
       if(e.key === 'Enter') {
           const data = await fetchWeather(query);
